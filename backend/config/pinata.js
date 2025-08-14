@@ -6,3 +6,5 @@ require("dotenv").config()
 // pinarta api key
 
 // pinata sec api key
+
+async function uploadJSONTo
