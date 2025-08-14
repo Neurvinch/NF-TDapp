@@ -10,4 +10,17 @@ exports.createEvent = async (req, res) => {
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
-} 
+}   
+
+exports.getEvents = async (req, res) => {
+    try {
+
+        const events = await Event.find();
+
+        res.json(events);
+        
+    } catch (error) {
+        res.status(500).json({ error: error.message });     
+         
+    }
+}
