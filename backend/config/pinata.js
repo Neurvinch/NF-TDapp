@@ -11,6 +11,13 @@ async function uploadJSONToIPFS(jsonData) {
     const url = `https://api.pinata.cloud/pinning/pinJSONToIPFS`
 
     const res = await axios.post(url, jsonData, {
-        
-    })
+        headers: {
+            // pinata key 
+
+            // pinaata secret key
+        }
+    });
+
+
+    return``
 }
