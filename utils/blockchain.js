@@ -19,4 +19,11 @@
 
 
     console.log( " deploying...")
+
+
+    const contract = await factory.deploy(name, symbol , totalsupply);
+
+    await contract.waitForDeployment()
+
+    
  }
