@@ -1,4 +1,7 @@
 const Event = require("../models/Event")
+const {uploadJSONToIPFS} = require("../config/pinata")
+
+const {} = 
 
 exports.createEvent = async (req, res) => {
     try {
