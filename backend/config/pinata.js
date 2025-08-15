@@ -33,7 +33,7 @@ async function uploadJSONToIPFS(jsonData) {
         headers: {
             // pinata key
             // pinata secret key
-            ...fom
+            ...form.getHeaders()
         }
     })
 
