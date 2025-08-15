@@ -27,6 +27,8 @@ exports.createEvent = async (req, res) => {
     ]
     } 
 
+    const IpfsHash = await uploadJSONToIPFS(metadata);
+
     
       
         
