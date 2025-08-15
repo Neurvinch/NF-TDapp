@@ -1,7 +1,8 @@
 const Event = require("../models/Event")
 const {uploadJSONToIPFS} = require("../config/pinata")
 
-const {} = require("")
+const {deployTicketContract} = require("../utils/blockchain")
+
 
 exports.createEvent = async (req, res) => {
     try {
