@@ -8,5 +8,9 @@ import "@openZeppelin/contracts/access/Ownable.sol"
 contract EventTicket is ERC721URIStorage, Ownable {
 
     uint256 public maxSupply;
+    uint256 public currentSupply = 0;
+
+
+    mapping()
 
 }
