@@ -17,4 +17,13 @@ contract EventTicket is ERC721URIStorage, Ownable {
    
 
    event TicketCheckedIn( uint256 indexed tokenId )
+
+   constructor(
+    string memory _name ,
+    string memory _symbol,
+    uint256 _maxSupply 
+   ) ERC721(_name , 
+   _symbol) Ownable (msg.sender) {
+    
+   }
 }
