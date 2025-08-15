@@ -24,6 +24,6 @@ contract EventTicket is ERC721URIStorage, Ownable {
     uint256 _maxSupply 
    ) ERC721(_name , 
    _symbol) Ownable (msg.sender) {
-    
+       maxSupply = _maxSupply
    }
 }
