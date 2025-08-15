@@ -27,7 +27,7 @@ exports.createEvent = async (req, res) => {
     ]
     } 
 
-    const IpfsHash = await uploadJSONToIPFS(metadata);
+    const ipfsHash = await uploadJSONToIPFS(metadata);
 
     const contractAddress = await deployTicketContract(name, "TIX", totalTickets)
 
@@ -38,9 +38,14 @@ exports.createEvent = async (req, res) => {
         date ,
         price,
         totalTickets,
-        
+        contractAddress,
+        ipfsHash,
+        organizerWallet
 
-    })
+    });
+
+
+    res.status(201).json(event)
       
         
     } catch (error) {
