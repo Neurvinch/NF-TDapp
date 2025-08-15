@@ -29,7 +29,10 @@ exports.createEvent = async (req, res) => {
 
     const IpfsHash = await uploadJSONToIPFS(metadata);
 
-    
+    const contractAddress = await deployTicketContract(name, "TIX", totalTickets)
+
+
+    const event = await
       
         
     } catch (error) {
