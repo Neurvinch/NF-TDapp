@@ -16,5 +16,5 @@ contract EventTicket is ERC721URIStorage, Ownable {
     event TicketMinted(address indexed buyer, uint256 indexed tokenId)
    
 
-   event TicketCheckedIn()
+   event TicketCheckedIn( uint256 indexed tokenId )
 }
