@@ -7,4 +7,6 @@ require("dotenv").config()
 
 // pinata sec api key
 
-async function uploadJSONTo
+async function uploadJSONToIPFS(jsonData) {
+    const url = `https://api.pinata.cloud/pinning/pinJSONToIPFS`
+}
