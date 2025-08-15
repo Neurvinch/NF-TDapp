@@ -13,4 +13,7 @@
 
     // load the contract from hardhat
     const contractJson = require('')
+
+
+    const factory = new ethers.ContractFactory(contractJson.abi, contractJson.bytecode, wallet)
  }
