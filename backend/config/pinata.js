@@ -9,4 +9,8 @@ require("dotenv").config()
 
 async function uploadJSONToIPFS(jsonData) {
     const url = `https://api.pinata.cloud/pinning/pinJSONToIPFS`
+
+    const res = await axios.post(url, jsonData, {
+        
+    })
 }
