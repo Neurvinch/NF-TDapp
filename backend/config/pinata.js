@@ -19,5 +19,6 @@ async function uploadJSONToIPFS(jsonData) {
     });
 
 
-    return``
+    return `ipfs://${res.data.IpfsHash}`
 }
+
