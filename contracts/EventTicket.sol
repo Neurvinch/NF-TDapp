@@ -11,6 +11,10 @@ contract EventTicket is ERC721URIStorage, Ownable {
     uint256 public currentSupply = 0;
 
 
-    mapping()
+    mapping(uint256 => bool) public checkedIn;
 
+    event TicketMinted(address indexed buyer, uint256 indexed tokenId)
+   
+
+   event TicketCheckedIn()
 }
