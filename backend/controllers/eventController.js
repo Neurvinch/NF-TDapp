@@ -32,7 +32,15 @@ exports.createEvent = async (req, res) => {
     const contractAddress = await deployTicketContract(name, "TIX", totalTickets)
 
 
-    const event = await
+    const event = await Event.create({
+        name, 
+        venue,
+        date ,
+        price,
+        totalTickets,
+        
+
+    })
       
         
     } catch (error) {
