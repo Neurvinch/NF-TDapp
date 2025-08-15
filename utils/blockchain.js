@@ -32,3 +32,5 @@
 
     return address
  }
+
+ module.exports = {deployTicketContract}
