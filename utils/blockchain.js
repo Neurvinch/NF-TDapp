@@ -25,5 +25,10 @@
 
     await contract.waitForDeployment()
 
-    
+    const address = await contract.getAddress()
+
+    console.log("Contract deployed at address:", address)
+
+
+    return address
  }
