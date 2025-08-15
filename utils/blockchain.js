@@ -16,4 +16,7 @@
 
 
     const factory = new ethers.ContractFactory(contractJson.abi, contractJson.bytecode, wallet)
+
+
+    console.log( " deploying...")
  }
