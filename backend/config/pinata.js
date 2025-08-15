@@ -25,5 +25,8 @@ async function uploadJSONToIPFS(jsonData) {
  async function uploadFileToIPFS(filepath) {
     const form = new FormData();
 
+    form.append("file", require("fs").createReadStream(filepath));
+
+
     
  }
