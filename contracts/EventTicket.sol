@@ -26,4 +26,9 @@ contract EventTicket is ERC721URIStorage, Ownable {
    _symbol) Ownable (msg.sender) {
        maxSupply = _maxSupply
    }
+
+
+   function mintTicket(address to , string memory tokenURI)  public onlyOwner {
+    
+   }
 }
