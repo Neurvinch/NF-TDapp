@@ -17,8 +17,17 @@ exports.createEvent = async (req, res) => {
 
     const metadata = {
          name,
-         description : ``
-    }
+         description : `Ticket for ${name} at ${venue} on ${date}`,
+         attributes: [
+            {trait_type: "Venue", value: venue},
+            {trait_type: "Date", value: date},
+            {trait_type: "Price", value: price},
+            {trait_type: "Total Tickets", value: totalTickets},
+            {trait_type: "Organizer Wallet", value: organizerWallet}
+    ]
+    } 
+
+    
       
         
     } catch (error) {
