@@ -22,3 +22,6 @@ async function uploadJSONToIPFS(jsonData) {
     return `ipfs://${res.data.IpfsHash}`
 }
 
+ async function uploadFileToIPFS(filepath) {
+    
+ }
