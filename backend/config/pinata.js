@@ -28,7 +28,13 @@ async function uploadJSONToIPFS(jsonData) {
     form.append("file", require("fs").createReadStream(filepath));
 
     const res = await axios.post("https://api.pinata.cloud/pinning/pinFileToIPFS", form, { 
-        
+        maxBodyLength: "Infinity",
+
+        headers: {
+            // pinata key
+            // pinata secret key
+            ...fom
+        }
     })
 
  }
