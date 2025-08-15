@@ -41,4 +41,8 @@ async function uploadJSONToIPFS(jsonData) {
 
  }
 
- 
+ module.exports = {
+    uploadJSONToIPFS,
+    uploadFileToIPFS
+}
+
