@@ -48,6 +48,12 @@ contract EventTicket is ERC721URIStorage, Ownable {
    function checkIn(uint256 tokenId) public onlyOwner{
     require(_exists(tokenId), "Token does not 
     Exist")
+
+    require(!checkedIn[tokenId], "Already checked In")
+
+      checkedIn[tokenId] = true
+
+      emit TicketCheckedIn(tokenId)
    }
 
 
