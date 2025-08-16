@@ -29,6 +29,7 @@ contract EventTicket is ERC721URIStorage, Ownable {
 
 
    function mintTicket(address to , string memory tokenURI)  public onlyOwner {
-    
+      
+      require(currentSupply< maxSupply, "All tickets have been sold");
    }
 }
