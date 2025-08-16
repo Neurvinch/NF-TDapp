@@ -39,5 +39,9 @@ contract EventTicket is ERC721URIStorage, Ownable {
       _setTokenURI(tokenId, tokenURI)
 
       currentSupply++ ;
+
+      emit TicketMinted(to , tokenId);
+
+      
    }
 }
