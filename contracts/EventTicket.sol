@@ -32,16 +32,23 @@ contract EventTicket is ERC721URIStorage, Ownable {
       
       require(currentSupply< maxSupply, "All tickets have been sold");
 
-      uint256 tokenId = currentSupply++;
+      uint256 tokenId = currentSupply + 1;
 
       _safeMint(to, tokenId);
 
       _setTokenURI(tokenId, tokenURI)
-
+  // need to watch this one 
       currentSupply++ ;
 
       emit TicketMinted(to , tokenId);
 
-      
+
    }
+
+   function checkIn(uint256 tokenId) public onlyOwner{
+    require(_exists(tokenId), "Token does not 
+    Exist")
+   }
+
+
 }
